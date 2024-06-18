@@ -34,6 +34,19 @@
         .form-container button:hover {
             opacity:1;
         }
+        .chatBox {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            overflow-y: auto;
+            height: 150px;
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -44,9 +57,11 @@
     <div class="form-container">
         <form action="">
             <h1>Chat Application</h1>
-            <input type="text" id="txtMessage" placeholder="Type a message...">
+            <div id="messages" class="chatBox"></div>
+            <input type="text" id="txtMessage" placeholder="Type a message..." autocomplete="off">
             <button id="btn" type="submit">Send</button>
         </form>
+       
     </div>
    
 </body>

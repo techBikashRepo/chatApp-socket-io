@@ -5,7 +5,17 @@ socket.on("connect", () => {
 });
 
 socket.on("broadcastMessage", (msg) => {
-  console.log(msg);
+  // Get the messages container
+  const messagesContainer = document.getElementById("messages");
+
+  // Create a new paragraph element for the message
+  const messageElement = document.createElement("p");
+
+  // Set the text content of the paragraph to the received message
+  messageElement.textContent = msg;
+
+  // Append the new message to the messages container
+  messagesContainer.appendChild(messageElement);
 });
 
 const btn = document.getElementById("btn");
