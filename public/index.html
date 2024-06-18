@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .form-container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container input[type=text] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            border-radius: 6px;
+        }
+        .form-container button:hover {
+            opacity:1;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Chat App</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <h1>Chat Application</h1>
+            <input type="text" id="txtMessage" placeholder="Type a message...">
+            <button id="btn" type="submit">Send</button>
+        </form>
+    </div>
+   
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/socket.js"></script>
+</html>
