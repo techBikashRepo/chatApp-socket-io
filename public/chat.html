@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Socket.io Chat App</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+        <div class="card shadow-lg">
+            <div class="card-header text-center">
+                <h5 class="card-title mb-0">Chat Application</h5>
+            </div>
+            <div id="messages" class="card-body p-3 mb-3" style="height: 200px; overflow-y: scroll;"></div>
+            <div class="card-footer">
+                <form action="" class="form-inline">
+                    <input type="text" id="txtMessage" placeholder="Type a message..." autocomplete="off" class="form-control mb-3 mr-2 flex-grow-1">
+                    <button id="btn" type="submit" class="btn btn-primary mb-3">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/socket.js"></script>
+</body>
+
+</html>
